@@ -14,23 +14,31 @@ for line in range(len(data)):
     
     for stuff in digits:
         if stuff in data[line]:
-            data[line] = data[line].replace(stuff, str(digits.index(stuff)+1))
+            numbers.append(digits.index(stuff)+1)
+    
+    for things in numbers:
+        
+
+        
+    data[line] = data[line].replace(stuff, str(digits.index(stuff)+1))
             # new_data.append(data[line])
+    break
 
 print("Data after: ", data)
+print(numbers)
 
 
-sum = 0
-for i in (data):
-    # print(i)
-    number = []
-    for j in i:
-        mini_sum = 0
-        if j.isdigit():
-            number.append(j)
-    mini_sum = number[0] + number[-1]
-    sum += int(mini_sum)
-print(sum)
+# sum = 0
+# for i in (data):
+#     # print(i)
+#     number = []
+#     for j in i:
+#         mini_sum = 0
+#         if j.isdigit():
+#             number.append(j)
+#     mini_sum = number[0] + number[-1]
+#     sum += int(mini_sum)
+# print(sum)
 
 
 # for line in data:
